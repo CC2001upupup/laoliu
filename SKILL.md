@@ -1388,6 +1388,84 @@ Use it as a functional order, not a sentence template.
 - A definition the reader may need (`semisimple`) may go in a footnote with its
   source (`see Definition 1.4.3 of [5]`).
 
+## Switching graphs and the jointly connected condition
+
+Liu Tao writes the switching signal, the switching graph, the jointly
+connected assumption, and the Remarks after it in one fixed form across his
+papers (checked in [NQPNIMGV], [8Y9SFBV8], [ZKKHXEIE], [SDYF5EL5],
+[8R4ASWG4], [YARABNQX]; the 2021 paper [LZ7C9VQJ] still used an older
+definition with a window $T$ and is not followed). Copy this form; change only
+the symbols for the graph, the node set, and the time origin.
+
+- **Switching signal, in the Notation/Terminology paragraph:** `We call a
+  time function $\sigma : [0, \infty) \to \mathcal P = \{1, 2, \ldots, n_0\}$
+  a piecewise constant switching signal, if there exists a sequence $\{t_j :
+  j = 0, 1, 2, \ldots\}$ satisfying $t_0 = 0$ and $t_{j+1} - t_j \ge \tau$, $j =
+  0, 1, 2, \ldots$, for some $\tau > 0$ such that, for all $t \in [t_j,
+  t_{j+1})$, $\sigma(t) = p$ for some $p \in \mathcal P$. Then $\mathcal P$ is
+  called the switching index set, $\{t_j : j = 0, 1, 2, \ldots\}$ are called
+  switching instants, and $\tau$ is called the dwell time.` Discrete time:
+  $\sigma : \mathbb Z^+ \to \mathcal P$, an infinite sequence of $t_j \in
+  \mathbb Z^+$, a positive integer $\tau$, and `$\sigma(t)$ remains constant
+  for $t_j \le t < t_{j+1}$`.
+- **Switching graph, in the problem formulation:** `The topology of the
+  communication network ... is described by an undirected switching graph
+  $\mathcal G_{\sigma(t)} = (\mathcal V, \mathcal E_{\sigma(t)})$, where
+  $\sigma(t)$ is a piecewise constant switching signal, $\mathcal V = \{1,
+  \ldots, N\}$, and $\mathcal E_{\sigma(t)} \subseteq \mathcal V \times
+  \mathcal V$.` Then state what an edge means at time $t$ (`$(i, j) \in
+  \mathcal E_{\sigma(t)}$ indicates that the $i$th agent can exchange
+  information with the $j$th agent at the time instant $t$`), define
+  $\mathcal N_i(t) = \{j \in \mathcal V : (j, i) \in \mathcal E_{\sigma(t)}\}$,
+  and put graph notation in an appendix or footnote (`See Appendix A for a
+  summary of notation on graph.`).
+- **The assumption (undirected, continuous time):** `There exists a
+  subsequence $\{t_{j_k} : k = 0, 1, 2, \ldots\}$ of the switching instants
+  $\{t_j : j = 0, 1, 2, \ldots\}$ with $t_{j_0} = 0$ and $t_{j_{k+1}} -
+  t_{j_k} \le T_\text{c}$ for some $T_\text{c} > 0$, such that the union graph
+  $\bigcup_{t_j \in [t_{j_k}, t_{j_{k+1}})} \mathcal G_{\sigma(t_j)}$ is
+  connected.` Variants keep this sentence and change one part only:
+  discrete time writes `an infinite subsequence $\{t_{j_k} \in \mathbb Z^+ :
+  \ldots\}$` and `$\tau \le t_{j_{k+1}} - t_{j_k} \le T_\text{c}$ for some
+  positive integer $T_\text{c}$`; a leader-follower digraph replaces the last
+  clause by `such that every node $i$, $i = 1, \ldots, N$, is reachable from
+  node 0 in the union graph ...`; [8Y9SFBV8] indexes the union by $t_r$
+  (`$\bigcup_{t_r \in [t_{j_k}, t_{j_{k+1}})} \mathcal G_{\sigma(t_r)}$`).
+  The lead-in names what each assumption is on (`we make the following three
+  assumptions on the system matrix $A$, the pair $(C, A)$, and the switching
+  graph $\mathcal G_{\sigma(t)}$, respectively`).
+- **Remarks after the assumption** (merged into one Remark when they would
+  otherwise be adjacent, constraint 4):
+  - Name and mildness, with citations for the name and the hedge `perhaps`:
+    `Assumption 3 is called the jointly connected condition [Jadbabaie, Lin,
+    and Morse 2003; Su and Huang 2012] (or the uniformly connected condition
+    [Lin 2006]). It is perhaps the mildest condition for a graph as it allows
+    the graph to be disconnected at any time instant.` Equivalent wordings
+    in his papers: `perhaps the least restrictive condition on the graph`
+    (TAC 2025), `perhaps the weakest form of connectivity for a graph` (TAC
+    2023), `perhaps the mildest connectivity condition on the switching
+    digraph of the leader-follower multi-agent system` (Automatica 2023), and,
+    for a leader digraph, `it is the least restrictive graph for a
+    multiagent system with a leader` (TAC 2024). Keep `perhaps` (or `one
+    of`); never write `the mildest` without it.
+  - Laplacian facts used later: `Let $L_{\sigma(t)}$ be the Laplacian of the
+    undirected switching graph $\mathcal G_{\sigma(t)}$. Then $L_{\sigma(t)}$
+    is symmetric and positive semi-definite for all $t \ge 0$. Moreover,
+    $\sum_{r = j_k}^{j_{k+1} - 1} L_{\sigma(t_r)}$ is a Laplacian associated
+    with the union graph ... Then, under Assumption 3, the matrix $\sum_{r =
+    j_k}^{j_{k+1} - 1} L_{\sigma(t_r)}$ has exactly one zero eigenvalue and
+    its null space is spanned by the single vector $\mathbf 1_N$`, with
+    citations.
+  - When the condition is weak, say what it forces elsewhere (`As the jointly
+    connected condition is perhaps the weakest form of connectivity for a
+    graph, to ensure the stability of the overall system, one needs to impose
+    certain stability constraint on the system ...`), and say which other
+    assumptions are standard over jointly connected switching networks and
+    since when.
+- In response letters, use the same wording (`perhaps the least restrictive
+  condition on the graph as it allows the graph to be disconnected at any
+  time instant`) with the same citations, instead of an unhedged superlative.
+
 ## Mathematical correctness (non-skippable)
 
 Before presenting any derivation, citation, assumption, or numerical value:
