@@ -798,7 +798,17 @@ proof, naming a system with `we call`), follow the constraints.
      `forms $\hat x_i(t)$ by (a) and $v_i(t)$ by (b) with $O(\cdot)$
      additions`), and `it` must have one possible antecedent. Watch `the
      same order`, `similar`, `comparable`, `additional`, `the corresponding`,
-     `the above`, `a common`, `such`, `total`, and `it`. Apply the check where
+     `the above`, `a common`, `such`, `total`, and `it`. `The former` and
+     `the latter` are allowed only when the referent is unambiguous or the
+     sentence is short, with the two objects close by (`在表达清楚的时候允许
+     或者句子较短的时候允许`); in a long sentence, or when the two objects are
+     far apart, name the object again. Not `..., for either single-layered or
+     double-layered multi-agent networks, and by Remark~3 of the revised
+     manuscript, our result also applies to the former`, but `... our result
+     also applies to single-layered multi-agent networks`. This applies to
+     the manuscript and to response letters; do not rewrite an existing
+     clear use (`The latter gives $\hat{A} w_1 = \hat{L}_{\mathbb{G}} w_2$`
+     right after the two conditions stays). Apply the check where
      a reader would really misread (`现在太细了效果并不好`): do not add
      reasons for standard facts, do not expand a phrase that is already
      clear, and do not attach symbols to a generic statement (`each
@@ -1433,7 +1443,8 @@ satisfied, tell the user as an open question instead of smoothing it over.
   \end{enumerate}
   ```
 - Constraints 1, 2, 7, 8, 12, and 16 apply to response letters as to the
-  manuscript; every statement about a cited work is checked first.
+  manuscript, and so does the rule on `the former` and `the latter`
+  (constraint 22); every statement about a cited work is checked first.
 
 ## Scope
 
@@ -1507,7 +1518,7 @@ first (constraint 17); in a proof, reread every line and ask
 whether its reason is written (constraint 11). Check that no new name or
 acronym was added, every named object carries its symbol and every symbol in
 prose its name (constraint 19), no sentence, carried over or new, has a
-comparison without its object or an unclear referent (constraint 22), no two Remarks are adjacent, no obvious sentence remains in
+comparison without its object or an unclear referent (constraint 22), no `the former` or `the latter` with an unclear referent remains (constraint 22), no two Remarks are adjacent, no obvious sentence remains in
 a Remark, zeros follow constraint 13, every list of three or more items has a
 comma before the final `and` or `or`, every equation number referring to a
 system or other object carries its noun, citations use `Lemma 1 of [17]`,
