@@ -1517,8 +1517,15 @@ satisfied, tell the user as an open question instead of smoothing it over.
   `(6) and (7) ((8) and (9) of the revised manuscript)`,
   `[23] (reference [17] of the revised manuscript)`, or
   `(of the previous submission)` when there is no counterpart.
-- In each reply, first state the issue in terms of the previous submission,
-  then what the revised manuscript does. Label items `of the revised
+- Focus each reply on the revised manuscript (`没人会再去看previous 直接说
+  我们在revised怎么改 改了什么就好了`): say directly what was changed and
+  where it now is (`In the revised manuscript, the observability Gramian and
+  UCO are defined in ...`). Mention the previous submission at most once, in
+  a short clause that acknowledges the issue (`We agree that this bound was
+  not established in the previous submission.`); do not describe what the
+  previous submission did, quote its wording, or walk through its
+  equations. The reviewer's comment text keeps its annotations of
+  previous-submission numbers (first bullet). Label items `of the revised
   manuscript` wherever numbers could clash (both versions have a Fig. 6).
 - Use exactly the manuscript's own wording for its concepts (`reduces to`, as
   in the manuscript, not a coined noun such as `degeneration`), and keep such
