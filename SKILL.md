@@ -280,6 +280,19 @@ proof, naming a system with `we call`), follow the constraints.
    response-letter text alike. When the user asks for code, give the LaTeX
    directly in a code block, not as a .tex file, with every line flush-left
    (no indentation, also inside environments).
+   **One sentence per source line** (`写完一句要换行 一整段看的太累了`): in
+   every block of LaTeX given to the user, manuscript and response letter
+   alike, end the source line after each sentence and start the next
+   sentence on a new line; a long sentence may be broken further at a clause
+   boundary (after a comma, before `which`, `where`, `since`). A single line
+   break is a space in LaTeX, so the typeset paragraph is unchanged; a blank
+   line still separates paragraphs. Example:
+
+   ```latex
+   In the previous submission, the fact that (11) admits a solution under switching was only stated as ``it can be easily verified'' in Step~1 of the proof of Theorem~1.
+   In the revised manuscript, it is established in Lemma~1, which is placed before the derivation of the error system in Section~III-B,
+   and both block rows of (13) are verified explicitly in its proof.
+   ```
 13. **Zero.** A plain `0` denotes a scalar. A zero matrix (a vector is an
    $n \times 1$ matrix) is written `\mathbf 0` in two cases: as a block of a
    block matrix, companion matrix, or stacked vector (`$[I_{cn}\ \mathbf 0]$`,
